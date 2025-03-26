@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #515477;
+}
+
+li {
+    float: left;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Libre Franklin', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li a:hover {
+    background-color: #7b7e98;
+    transform: scale(1.05);
+}
+
+h1 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bold;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+p {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.main, .ocsmain, .aboutmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ocsmain h1 {
+    margin-left: 10px; 
+    margin-top: 10px; 
+    margin-bottom: 5px;
+}
+
+.multiimage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button {
+    background-color: #515477; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Libre Franklin', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #7b7e98;
+    transform: scale(1.05);
+}
+
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    ul {
+        flex-direction: column; /* Switch to vertical navbar */
+    }
+
+    li {
+        width: 100%; /* Make each item take full width */
+    }
+}

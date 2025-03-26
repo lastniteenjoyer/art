@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <style>
+        body {
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            background-color: #e4e5f1;
+            color: black;
+        }
+        
+        .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+    </style>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="ocs.html">OCs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li style="float:right"><a href="#" onClick="darkMode()">Toggle Dark Mode</a></li>
+            </ul>
+        </div>
+        <div class="ocsmain">
+            <h1>Zephyr</h1>
+            <img src="images/ZephyrBG.png" style="width: 50%;">
+            <p>My favorite adoptable! I absolutely love this maid Absol. Fun fact, the day I started making this site, I actually got some fanart of her!</p>
+            <p><a href="https://x.com/Ridsfox/status/1904434723616604332" target="_blank">Link to @Ridsfox's art!</a></p>
+            <p>As for who made this cutie, that would be <a href="https://x.com/RijsArt" target="_blank">@RijsArt!</a></p>
+            <h1>Lila</h1>
+            <img src="images/Lila.png" style="width: 50%;">
+            <p>This was my first adoptable! She was made by <a href="https://x.com/Muroo_png" target="_blank">@Muroo_png!</a> They have the best Goodra OC, by the way.</p>
+            <h6>I might be getting a Goodra myself in the future... *wink wink*</h6>
+            <h1>Celeste</h1>
+                <div class="multiimage">
+                    <img src="images/CelesteN.png" style="width: 35%;">
+                    <img src="images/Celeste.png" style="width: 35%;">
+                </div>
+            <p>This girl's a big softie. I want to hug her tail!</p>
+            <p>Made by <a href="https://ych.commishes.com/user/mocrota/">Mocrota!</a></p>
+            <h1>Cordelia</h1>
+            <img src="images/CordeliaBG.png" style="width: 35%;">
+            <p>I've always loved shark girls... and this lady is just my type! Would definitely hug and cuddle.</p>
+            <p>Made by <a href="https://ych.commishes.com/user/mocrota/">Mocrota!</a></p>
+        </div>
+        <script>
+            window.onload = function () {
+                if (localStorage.getItem("darkMode") === "true") {
+                    document.body.classList.add("dark-mode");
+                }
+            }
+
+            function darkMode() {
+                document.body.classList.toggle("dark-mode");
+                localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
+            }
+        </script>
+    </body>
+</html>

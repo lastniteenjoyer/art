@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <style>
+        body {
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            background-color: #e4e5f1;
+            color: black;
+        }
+        
+        .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+    </style>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="ocs.html">OCs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li style="float:right"><a href="#" onClick="darkMode()">Toggle Dark Mode</a></li>
+            </ul>
+        </div>
+        <div class="aboutmain">
+            <h1>Check out my Twitter!</h1>
+            <h4>Even though you most likely came from my Twitter, haha.</h4>
+            <button class="button"><a href="https://x.com/LastNiteEnjoyer" target="_blank">Link to my Twitter</a></button>
+            <h1>Check out my JanitorAI!</h1>
+            <h4>I make character bots of anthro Pokémon from time to time!</h4>
+            <button class="button"><a href="https://janitorai.com/profiles/42fe33ad-ba39-43b1-8dfe-d5dee706503b_profile-of-lastniteenjoyer" target="_blank">Link to my JanitorAI</a></button>
+        </div>
+        <script>
+            window.onload = function () {
+                if (localStorage.getItem("darkMode") === "true") {
+                    document.body.classList.add("dark-mode");
+                }
+            }
+
+            function darkMode() {
+                document.body.classList.toggle("dark-mode");
+                localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
+            }
+        </script>
+    </body>
+</html>
