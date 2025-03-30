@@ -5,12 +5,17 @@ body {
     padding: 0;
 }
 
+img {
+    max-width: 90%;
+    max-height: 100%;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #515477;
+    background-color: #b478b1;
 }
 
 li {
@@ -29,7 +34,7 @@ li a {
 }
 
 li a:hover {
-    background-color: #7b7e98;
+    background-color: #d5b6d8;
     transform: scale(1.05);
 }
 
@@ -67,7 +72,7 @@ p {
 }
 
 .button {
-    background-color: #515477; /* Green */
+    background-color: #3bc494; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -81,7 +86,7 @@ p {
 }
 
 .button:hover {
-    background-color: #7b7e98;
+    background-color: #ace3c0;
     transform: scale(1.05);
 }
 
@@ -91,6 +96,7 @@ p {
     color: white;
 }
 
+
 @media screen and (max-width: 600px) {
     ul {
         flex-direction: column; /* Switch to vertical navbar */
@@ -99,4 +105,10 @@ p {
     li {
         width: 100%; /* Make each item take full width */
     }
+
+    img {
+        width: 90%;
+        height: 100%;
+    }
+    
 }
