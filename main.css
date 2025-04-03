@@ -51,7 +51,7 @@ p {
     font-family: 'Libre Franklin', sans-serif;
 }
 
-.main, .ocsmain, .aboutmain {
+.main, .ocsmain, .aboutmain, .adoptsmain {
     display: flex;
     flex-direction: column;
     justify-content: center;
