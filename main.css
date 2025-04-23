@@ -67,8 +67,26 @@ p {
 
 .multiimage {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%; /* adjust based on how many items per row */
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+}
+
+.item h1, .item h4 {
+    margin-top: 15px;
+    text-align: center;
 }
 
 .button {
