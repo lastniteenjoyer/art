@@ -59,6 +59,14 @@ p {
     text-align: center;
 }
 
+.mainpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .ocsmain h1 {
     margin-left: 10px; 
     margin-top: 10px; 
@@ -114,6 +122,13 @@ p {
     color: white;
 }
 
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 3px;
+    background-color: #b478b1;
+    color: white;
+}
 
 @media screen and (max-width: 600px) {
     ul {
@@ -155,6 +170,17 @@ p {
         cursor: pointer;
         font-family: 'Libre Franklin', sans-serif;
         transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .multiimage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        width: 80%;
     }
 
 }
